@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#countdown .col-12 {
+    margin-bottom: 8px;
+}
+
+#countdown .border {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#countdown .fs-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#countdown span {
+    display: block;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+h1.display-4 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    #countdown .col-12.col-sm-3 {
+        width: 45%; 
+    }
+    
+    #countdown .fs-2 {
+        font-size: 1.3rem; 
+    }
+
+    #countdown span {
+        font-size: 0.85rem; 
+    }
+
+    h1.display-4 {
+        font-size: 1.8rem; 
+    }
+
+    p.lead {
+        font-size: 1rem; 
+    }
+
+    #countdown .border {
+        padding: 12px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 675px) {
+    #countdown .col-12.col-sm-3 {
+        width: 70%; 
+    }
+    
+    #countdown .fs-2 {
+        font-size: 1.2rem; 
+    }
+
+    #countdown span {
+        font-size: 0.8rem;
+    }
+
+    h1.display-4 {
+        font-size: 1.6rem; 
+    }
+
+    p.lead {
+        font-size: 0.9rem; 
+    }
+
+    #countdown .border {
+        padding: 10px;
+    }
+}
